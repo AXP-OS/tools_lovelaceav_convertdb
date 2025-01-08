@@ -29,6 +29,6 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         path: target/HypatiaDatabaseConverter*-jar-with-dependencies.jar
-        name: DatabaseConverter.jar
-        compression: 0
+        name: DatabaseConverter.zip
+        compression: 1
         if-no-files-found: error
