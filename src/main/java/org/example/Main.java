@@ -4,6 +4,7 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 /*
 Copyright (c) 2023-2024 Divested Computing Group
+Copyright (c) 2025 The AXP.OS Project <steadfasterX #AT# axpos -dot- org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -72,12 +73,12 @@ public class Main {
     public static void main(String[] args) {
         extendedMode = args[0].contains("-extended");
         //isFileInNsrl("B61905308B336AD268A782790B661616");
-        int amtMaxMD5 = 7600000; //7.6m
+        int amtMaxMD5 = 10000000; //10m
         if (extendedMode) {
             amtMaxMD5 = 52000000; //52m
         }
         int amtMaxSHA1 = 100000; //100k
-        int amtMaxSHA256 = 2200000; //2.2m
+        int amtMaxSHA256 = 3000000; //3m
         int amtMaxDomains = 4500000; //4.5m
         signaturesMD5 = BloomFilter.create(Funnels.stringFunnel(Charsets.US_ASCII), amtMaxMD5, 0.00001);
         signaturesSHA1 = BloomFilter.create(Funnels.stringFunnel(Charsets.US_ASCII), amtMaxSHA1, 0.00001);
