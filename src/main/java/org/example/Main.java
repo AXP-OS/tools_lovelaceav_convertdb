@@ -73,7 +73,7 @@ public class Main {
     public static void main(String[] args) {
         extendedMode = args[0].contains("-extended");
         //isFileInNsrl("B61905308B336AD268A782790B661616");
-        int amtMaxMD5 = 10000000; //10m
+        int amtMaxMD5 = 12000000; //12m
         if (extendedMode) {
             amtMaxMD5 = 52000000; //52m
         }
